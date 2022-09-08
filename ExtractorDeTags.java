@@ -8,7 +8,7 @@ public class ExtractorDeTags {
 		Scanner in = new Scanner(System.in);
 		int testCases = Integer.parseInt(in.nextLine());
 
-        String regex = "<([\\w\\s]+)>([\\w\\s]+)<\\/(\\1)>"; 
+        String regex = "<([ -~]+)>([ -;=?-~]+)<\\/(\\1)>"; 
         //(<\w+>)+([\w\s]+)(<\/\w+>)+
         // /(<[\w\s]+>)+([\w\s]+)(<\/[\w\s]+>)+/gm
         // (<[\\w\\s]+>)+([\\w\\s]+)(<\\/[\\w\\s]+>)+
